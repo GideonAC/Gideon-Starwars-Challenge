@@ -7,11 +7,12 @@ async function fetchStarWarsCharacters() {
     try {
         const response = await fetch('https://swapi.dev/api/people/');
         const data = await response.json();
+        console.log(data)
         const characters = data.results;
 
         // Display characters with images
         characters.forEach(character => {
-            const characterImage = `images/${character.name}.png`; // Adjust the path as needed
+            const characterImage = `./images/${character.name}.png`; // Adjust the path as needed
             character.image = characterImage;
         });
 
