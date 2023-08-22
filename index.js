@@ -12,7 +12,7 @@ async function fetchStarWarsCharacters() {
 
         // Display characters with images
         characters.forEach(character => {
-            const characterImage = `./images/${character.name}.png`; // Adjust the path as needed
+            const characterImage = `./Images/${character.name}.png`; // Adjust the path as needed
             character.image = characterImage;
         });
 
