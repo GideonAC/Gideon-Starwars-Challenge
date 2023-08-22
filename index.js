@@ -1,6 +1,7 @@
 const charactersList = document.querySelector('.characters-list');
 const characterDetails = document.querySelector('.character-details');
 
+
 // Function to fetch Star Wars characters from the API
 async function fetchStarWarsCharacters() {
     try {
